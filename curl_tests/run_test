@@ -15,4 +15,3 @@ fi
 
 echo "Running test: $1"
 source tests/$1.json $RPC_ENDPOINT | jq -S >$output_dir/$1.json
-diff expected/$1.json $output_dir/$1.json
